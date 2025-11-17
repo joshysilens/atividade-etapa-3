@@ -48,8 +48,8 @@ public class InimigoVoador : MonoBehaviour
                     pontosDePatrulha[pontoAtual].position, 
                     velocidade * Time.deltaTime);
 
-                if(Mathf.Abs(pontosDePatrulha[pontoAtual].position.x - transform.position.x) <= 0.01f ||
-                   Mathf.Abs(pontosDePatrulha[pontoAtual].position.y - transform.position.y) <= 0.01f)
+                if(Mathf.Abs(pontosDePatrulha[pontoAtual].position.x - transform.position.x) <= 0.001f ||
+                   Mathf.Abs(pontosDePatrulha[pontoAtual].position.y - transform.position.y) <= 0.001f)
                 {
                     pontoAtual++;
                     if (pontoAtual >= pontosDePatrulha.Length)
